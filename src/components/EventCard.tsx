@@ -11,7 +11,7 @@ interface Event {
   teamSize: string;
   duration: string;
   prize: string;
-  registrationLink: string;
+  registrationLink: string | null;
   rules: string[];
 }
 
@@ -43,6 +43,11 @@ const EventCard = ({ event, index }: EventCardProps) => {
       document.body.style.overflow = 'unset';
     };
   }, [isModalOpen]);
+
+  const handleRegisterClick = () => {
+    alert('Registration Ended');
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -256,27 +261,6 @@ const EventCard = ({ event, index }: EventCardProps) => {
                   </div>
                 </div>
 
-                {/* Rules 
-                <div className="mb-6">
-                  <h3 className="font-orbitron text-lg font-semibold mb-3">Rules & Guidelines</h3>
-                  <ul className="space-y-2">
-                    {event.rules.map((rule, i) => (
-                      <motion.li
-                        key={i}
-                        className="flex items-start gap-2 text-sm text-muted-foreground"
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.05 }}
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        {rule}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </div> 
-                
-                */}
-
                 {/* Register Button & Rules */}
                 <div className="grid grid-cols-[1fr,2fr] gap-4">
                   <motion.button
@@ -289,13 +273,12 @@ const EventCard = ({ event, index }: EventCardProps) => {
                   </motion.button>
 
                   <motion.button
-                    className="w-full py-4 rounded-lg font-orbitron font-bold text-primary-foreground relative overflow-hidden"
+                    className="w-full py-4 rounded-lg font-orbitron font-bold text-primary-foreground relative overflow-hidden opacity-60"
                     style={{ background: 'var(--gradient-accent)' }}
-                    whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => window.open(event.registrationLink, '_blank')}
+                    onClick={handleRegisterClick}
                   >
-                    REGISTER NOW
+                    REGISTRATION CLOSED
                   </motion.button>
                 </div>
               </div>
