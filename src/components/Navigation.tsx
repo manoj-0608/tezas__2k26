@@ -10,7 +10,7 @@ const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'events', label: 'Events' },
   { id: 'timeline', label: 'Timeline' },
-  /*  { id: 'rules', label: 'Rules' },  */,
+  /*  { id: 'rules', label: 'Rules' },  */
   { id: 'contact', label: 'Contact' },
 ];
 
