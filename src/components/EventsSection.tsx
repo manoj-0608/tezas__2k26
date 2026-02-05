@@ -6,13 +6,13 @@ const events = [
   {
     id: 'innoverse',
     title: 'InnoVerse',
-    description: 'InnoVerse is a platform for innovators to showcase research, ideas, and emerging solutions in Artificial Intelligence and Data Science. Participants may present individually or as a team, defending their work through clarity, originality, and technical depth. It’s where ideas meet insight and innovation takes center stage.',
+    description: 'InnoVerse is a platform for innovators to showcase research, ideas, and emerging solutions in Artificial Intelligence and Data Science. Participants may present individually or as a team, defending their work through clarity, originality, and technical depth. It\'s where ideas meet insight and innovation takes center stage.',
     icon: <Presentation className="w-10 h-10" />,
     gradient: 'linear-gradient(135deg, hsl(330 100% 50% / 0.3), hsl(350 100% 50% / 0.1))',
     teamSize: '1–4 Members',
     duration: '1 Round',
     prize: '1st: ₹1000, 2nd: ₹750, 3rd: ₹500',
-    registrationLink: 'https://forms.gle/LRyb8fnbQzbSRjKs9',
+    registrationLink: null,
     rules: [
       'Participants may present individually or as a team',
       'Defend work through clarity, originality, and technical depth',
@@ -28,7 +28,7 @@ const events = [
     teamSize: '2–3 Members',
     duration: '3 Rounds',
     prize: '1st: ₹1000, 2nd: ₹750, 3rd: ₹500',
-    registrationLink: 'https://forms.gle/oMu4G9Gh7rFXNdEu6',
+    registrationLink: null,
     rules: [
       'Tests analytical thinking and AI awareness',
       'Real-time decision-making under pressure',
@@ -44,7 +44,7 @@ const events = [
     teamSize: '2 Members',
     duration: '1 Round',
     prize: '1st: ₹1000, 2nd: ₹750, 3rd: ₹500',
-    registrationLink: 'https://forms.gle/cKdvv167oXM25gx39',
+    registrationLink: null,
     rules: [
       'Transform visual input into meaningful interpretation',
       'Analyze, connect, and creatively represent scenes',
@@ -60,7 +60,7 @@ const events = [
     teamSize: '1–2 Members',
     duration: '2 Rounds',
     prize: '1st: ₹1000, 2nd: ₹750, 3rd: ₹500',
-    registrationLink: 'https://forms.gle/zLamntn5oGWzQDgF9',
+    registrationLink: null,
     rules: [
       'Art of asking the right questions',
       'Engage with non-human intelligence via structured dialogue',
@@ -76,7 +76,7 @@ const events = [
     teamSize: '2 Members',
     duration: '2 Rounds',
     prize: '1st: ₹1000, 2nd: ₹750, 3rd: ₹500',
-    registrationLink: 'https://forms.gle/JNtdysGptGjK4MJ88',
+    registrationLink: null,
     rules: [
       'Two-stage coding challenge',
       'Decode logic and race against time',
@@ -92,7 +92,7 @@ const events = [
     teamSize: '2–3 Members',
     duration: '5 Rounds',
     prize: '1st: ₹1000, 2nd: ₹750, 3rd: ₹500',
-    registrationLink: 'https://forms.gle/wjUiXeWdZhgaFbwx5',
+    registrationLink: null,
     rules: [
       'High-stakes multi-level treasure hunt',
       'Crack challenges across five themed levels',
